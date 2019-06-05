@@ -1,0 +1,13 @@
+version: '3.5'
+services:
+  serve:
+    build: .
+    image: teeto_club
+    container_name: teeto_club
+    restart: always
+    networks:
+      - utohub
+
+networks:
+  utohub:
+    external: true
