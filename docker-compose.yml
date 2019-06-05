@@ -5,6 +5,8 @@ services:
     image: teeto_club
     container_name: teeto_club
     restart: always
+    environment:
+      - VIRTUAL_HOST=ttsslab.com
     networks:
       - utohub
 
